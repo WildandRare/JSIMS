@@ -1,0 +1,170 @@
+body{
+    background-color: white;
+    font-family: Times, "Times";
+    overflow: hidden;
+}
+#banner {
+    background-image: linear-gradient(turquoise, rgb(0, 110, 255));
+    background-color: turquoise;
+    width: 500vw;
+    height: 20vw;
+    position: relative;
+    right: 10vw;
+    bottom: 5vw;
+}
+
+
+#modalbottom {
+    width: 100%; 
+    height: 3vw; 
+    background-color: rgb(0, 110, 255);
+    position: relative; 
+    margin-top: -6vw;
+}
+
+#statements {
+    background-color: rgb(213, 213, 213);
+    width: 500vw;
+    height: 21vw;
+    position: relative;
+    right: 10vw;
+    top: 3vw;
+    transition: cubic-bezier(0.165, 25, 0.44, 1) all 2s;
+    opacity: 1;
+}
+
+#statements2 {
+    background-color: rgb(213, 213, 213);
+    width: 500vw;
+    height: 21vw;
+    position: relative;
+    right: 10vw;
+    top: 19vw;
+}
+
+[type="statements"] {
+    width: 16vw;
+    height: 18vw;
+    background-color: grey;
+    border-radius: 20px;
+    top: 0.8vw;
+    font-size: 3.9vw; 
+    text-align: center;
+}
+
+[type="statements"] div{
+    width: 16vw;
+    height: 10vw;
+    background-color: rgb(172, 172, 172);
+    border-radius: 20px;
+    position: relative;
+    bottom: 5vw;
+    font-size: 3.9vw; 
+    text-align: center;
+}
+
+h6{
+    font-size: 1.5vw;
+    color: black;
+}
+
+/*font-size: 8vw; text-align: center;*/
+
+@media screen and (min-width: 1650px) {
+    #statements {
+        top: -15vw;
+    }
+    [type="statements"] {
+        width: -15vw;
+    }
+    #modalbottom {
+        margin-top: 0vw;
+    }
+}
+
+
+
+
+button{
+    float: right;
+    width: 10vw;
+    height: 5vw;
+    background-color: rgb(211, 211, 211);
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    font-family: Times, "Times";
+    border-radius: 12px;
+}
+@keyframes modalanimation{
+    0%{top: 0vw;}
+    100%{top: 10vw;}
+}
+
+@keyframes modalanimationJSIMS3{
+    0%{background-color: rgba(0, 0, 0, 0.59); color: rgba(0, 0, 0, 0.59); border-color: rgba(0, 0, 0, 0.59)}
+    100%{background-color: rgba(255, 0, 0, 0); color: rgba(255, 0, 0, 0); border-color: rgba(255, 0, 0, 0)}
+}
+
+@keyframes modalanimationJSIMS3ILJS{
+    0%{opacity: 1; color: rgba(0, 0, 0, 0.59); border-color: rgba(0, 0, 0, 0.59)}
+    100%{opacity: 0;background-color: rgba(255, 0, 0, 0); color: rgba(255, 0, 0, 0); border-color: rgba(255, 0, 0, 0)}
+}
+
+@keyframes modalanimationJSIMS3ILJS3OJSISGTM{
+    0%{opacity: 0; }
+    100%{opacity: 1;}
+}
+
+#modal {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 13vw;
+    position: fixed;
+    top: 10vw;
+    left: 10vw;
+    margin: auto;
+    z-index: 1;
+    animation-name: modalanimation;
+    animation-duration: 1s;
+}
+
+#results{
+    font-size: xx-large;
+    position: fixed;
+    top: 16vw;
+    opacity: 0;
+}
+
+[type="check"]{
+    color: green;
+    font-size: 5vw;
+    font-size: xx-large;
+}
+
+[type="other"]{
+    color:red;
+    font-size: 5vw;
+    font-size: xx-large;
+}
+
+#second{
+    text-align: right;
+    position: fixed;
+    right: 0;
+    top: 16vw;
+}
+
+#third h1{
+    text-align: center;
+    position: fixed;
+    right: 50vw;
+    top: 26vw;
+}
+
+#third{
+    text-align: left;
+    position: fixed;
+    right: 43vw;
+    top: 30.3vw;
+}
